@@ -18,6 +18,7 @@
   },
   "homepage": "https://github.com/Jonas-chino/cse-341-project1#readme",
   "dependencies": {
+    "dotenv": "^17.4.2",
     "express": "^5.2.1",
     "mongobd": "^0.0.1-security.0",
     "mongodb": "^7.2.0"
