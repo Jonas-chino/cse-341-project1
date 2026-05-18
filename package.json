@@ -18,8 +18,9 @@
   },
   "homepage": "https://github.com/Jonas-chino/cse-341-project1#readme",
   "dependencies": {
-    "express": "^5.2.1"
+    "express": "^5.2.1",
+    "mongobd": "^0.0.1-security.0",
+    "mongodb": "^7.2.0"
   },
-  "devDependencies": {},
   "keywords": []
 }
