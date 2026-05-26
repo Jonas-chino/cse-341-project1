@@ -14,7 +14,7 @@ const getAll = async (req, res) => {
 
 
 const getsingle = async (req, res) => {
-    const userId = new ObjectId(req.params.id)
+    const contacId = new ObjectId(req.params.id)
     const result = await mongodb.getDatabase().db('project').collection('contacts').find( {_id:contacId});
     result.toArray().then((contacts) => {
         res.setHeader('Content-Type', 'application/json');
@@ -25,4 +25,4 @@ const getsingle = async (req, res) => {
 module.exports = {
     getAll,
     getsingle
-}
+};
