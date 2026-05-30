@@ -1,0 +1,31 @@
+// LOCALHOST
+### Obtener todos los contactos
+GET http://localhost:3000/contacts
+
+### Obtener un contacto por ID
+GET http://localhost:3000/contacts/6a0a6ac1451faa919c6251de
+
+### Crear un contacto (POST)
+POST http://localhost:3000/contacts HTTP/1.1
+content-type: application/json
+
+{
+  "email": "testetest.com",
+  "username": "test@test.com",
+  "name": "tes",
+  "ipaddress": "94.121.163.63"
+}
+
+### Actualizar un contacto (PUT)
+PUT http://localhost:3000/contacts/6a0a6ac1451faa919c6251de HTTP/1.1
+content-type: application/json
+
+{
+"firstName": "Juan new",
+    "lastName": "Perez",
+    "email": "juan_nuevo@test.com",
+    "favoriteColor": "Verde",
+    "birthday": "1990-05-15"
+}
+### Eliminar un contacto (DELETE)
+DELETE http://localhost:3000/contacts/6a0a6ac1451faa919c6251de HTTP/1.1
